@@ -96,7 +96,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E7f-WM-mT0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search " id="VPb-xS-VXM"/>
+                    <tabBarItem key="tabBarItem" title="Pick a Quote" id="VPb-xS-VXM"/>
                     <connections>
                         <outlet property="searchBar" destination="nEj-fr-0w6" id="PoN-An-pVP"/>
                         <outlet property="tableView" destination="fo2-WN-JS7" id="Otd-25-gQQ"/>
@@ -104,7 +104,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nD6-Sw-7hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2267" y="496"/>
+            <point key="canvasLocation" x="2328" y="177"/>
+        </scene>
+        <!--Random Quote-->
+        <scene sceneID="nwF-JL-lmM">
+            <objects>
+                <viewController id="PAw-LP-d7R" customClass="RandomizedViewController" customModule="SunDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DLK-FQ-2yS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tzI-s4-9Bt">
+                                <rect key="frame" x="20" y="132" width="374" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Yu1-cf-rYr"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Everyday Mantra: Today is going to be my day, not sure what exactly is going to happen but today is going to be my day. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7aV-uD-waQ">
+                                <rect key="frame" x="20" y="351" width="374" height="422"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHE-Um-jOd">
+                                <rect key="frame" x="20" y="282" width="374" height="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.91127179169999994" blue="0.88194161059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hHE-Um-jOd" firstAttribute="top" secondItem="tzI-s4-9Bt" secondAttribute="bottom" constant="22" id="25v-lE-VkE"/>
+                            <constraint firstItem="ATi-ZV-smW" firstAttribute="trailing" secondItem="hHE-Um-jOd" secondAttribute="trailing" constant="20" id="7aI-qC-HuU"/>
+                            <constraint firstItem="ATi-ZV-smW" firstAttribute="bottom" secondItem="7aV-uD-waQ" secondAttribute="bottom" constant="40" id="Edt-OT-D9N"/>
+                            <constraint firstItem="tzI-s4-9Bt" firstAttribute="top" secondItem="ATi-ZV-smW" secondAttribute="top" constant="44" id="RkJ-Qz-3gX"/>
+                            <constraint firstItem="ATi-ZV-smW" firstAttribute="trailing" secondItem="7aV-uD-waQ" secondAttribute="trailing" constant="20" id="UnP-Aw-aRo"/>
+                            <constraint firstItem="hHE-Um-jOd" firstAttribute="leading" secondItem="ATi-ZV-smW" secondAttribute="leading" constant="20" id="aav-BF-0jA"/>
+                            <constraint firstItem="tzI-s4-9Bt" firstAttribute="leading" secondItem="ATi-ZV-smW" secondAttribute="leading" constant="20" id="bFQ-1y-inZ"/>
+                            <constraint firstItem="7aV-uD-waQ" firstAttribute="leading" secondItem="ATi-ZV-smW" secondAttribute="leading" constant="20" id="j5U-yG-GTa"/>
+                            <constraint firstItem="7aV-uD-waQ" firstAttribute="top" secondItem="hHE-Um-jOd" secondAttribute="bottom" constant="50" id="oV3-xY-kA9"/>
+                            <constraint firstItem="ATi-ZV-smW" firstAttribute="trailing" secondItem="tzI-s4-9Bt" secondAttribute="trailing" constant="20" id="ugz-he-kM2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ATi-ZV-smW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Random Quote" id="D6H-NE-Gep"/>
+                    <connections>
+                        <outlet property="quoteAuthor" destination="hHE-Um-jOd" id="QIb-CI-ClH"/>
+                        <outlet property="quoteBody" destination="tzI-s4-9Bt" id="muq-4d-ynQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aw7-KO-Ml2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.971014492754" y="910.71428571428567"/>
         </scene>
         <!--Search Detail View Controller-->
         <scene sceneID="dt0-Bi-grb">
@@ -160,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WQ-TP-NOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3021.739130434783" y="495.53571428571428"/>
+            <point key="canvasLocation" x="3114" y="177"/>
         </scene>
         <!--QOTD-->
         <scene sceneID="Sfp-KO-odU">
@@ -223,7 +279,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mk5-IK-kMu"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="qotd" id="CH6-bb-yTG"/>
+                    <tabBarItem key="tabBarItem" title="QOTD" id="CH6-bb-yTG"/>
                     <connections>
                         <outlet property="quoteAuthor" destination="KJS-8H-eaC" id="9hn-rg-Njg"/>
                         <outlet property="quoteBody" destination="OER-tJ-vXD" id="dxo-Bj-iU0"/>
@@ -232,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcd-7p-Aw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2266.666666666667" y="-172.09821428571428"/>
+            <point key="canvasLocation" x="2328" y="-548"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jml-Sf-wMs">
@@ -265,6 +321,7 @@
                     <connections>
                         <segue destination="9HQ-BL-NAX" kind="relationship" relationship="viewControllers" id="b9a-pK-IAQ"/>
                         <segue destination="orB-LN-IJt" kind="relationship" relationship="viewControllers" id="MwZ-I8-2gd"/>
+                        <segue destination="PAw-LP-d7R" kind="relationship" relationship="viewControllers" id="U74-kl-kTC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ws-6y-b8X" userLabel="First Responder" sceneMemberID="firstResponder"/>

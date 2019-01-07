@@ -22,7 +22,7 @@ class SearchViewController: UIViewController {
     }
     
     var currentQuote: MultipleQuotes?
-    
+    var counter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,25 +32,37 @@ class SearchViewController: UIViewController {
        
        // searchQuotes(keyword: "inspirational")
     }
-    
+    var timer = Timer()
     private func loadData(){
-        for _ in 0...19 {
-            let _  = Timer.scheduledTimer(timeInterval: 6.0, target: self, selector: #selector(callQuote), userInfo: nil, repeats: true)
-            }
+     callQuote()
+        
+            
     }
 
-    @objc func callQuote() {
+     func callQuote() {
+        if counter == 10 {
+            timer.invalidate()
+            return
+        }
+        timer  = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(getOnlineQuotes), userInfo: nil, repeats: true)
+    }
+
+    @objc func getOnlineQuotes() {
         QuotesAPIClient.getQuote { (onlineQuotes, error) in
-            if let quote = onlineQuotes {
-                self.quotations.append(quote)
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
+            DispatchQueue.main.async {
+                if let quote = onlineQuotes {
+                    self.quotations.append(quote)
+                    if self.counter < 10 {
+                        self.counter += 1
+                        
+                    }
+                    
                 }
+                
             }
+            self.callQuote()
         }
     }
-
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow,

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05038C9E21E3BA85006A84C0 /* RandomizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05038C9D21E3BA85006A84C0 /* RandomizedViewController.swift */; };
 		05F5766E21D87BCE00A9F0C8 /* qotdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F5766D21D87BCE00A9F0C8 /* qotdController.swift */; };
 		05F73C6321D6A05E00372072 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F73C6221D6A05E00372072 /* AppDelegate.swift */; };
 		05F73C6821D6A05F00372072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F73C6621D6A05F00372072 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05038C9D21E3BA85006A84C0 /* RandomizedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizedViewController.swift; sourceTree = "<group>"; };
 		05F5766D21D87BCE00A9F0C8 /* qotdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qotdController.swift; sourceTree = "<group>"; };
 		05F73C5F21D6A05E00372072 /* SunDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F73C6221D6A05E00372072 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				05F5766D21D87BCE00A9F0C8 /* qotdController.swift */,
 				05F73C7821D6B7BE00372072 /* SearchViewController.swift */,
 				05F73C7421D6B75E00372072 /* SearchDetailViewController.swift */,
+				05038C9D21E3BA85006A84C0 /* RandomizedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				05F73C7E21D6BAB500372072 /* Quotes.swift in Sources */,
 				05F73C7921D6B7BE00372072 /* SearchViewController.swift in Sources */,
 				05F73C7521D6B75E00372072 /* SearchDetailViewController.swift in Sources */,
+				05038C9E21E3BA85006A84C0 /* RandomizedViewController.swift in Sources */,
 				05F73C8021D6BAD200372072 /* MultipleQuotes.swift in Sources */,
 				05F73C8821D6D0E800372072 /* RandomAPIClient.swift in Sources */,
 			);
